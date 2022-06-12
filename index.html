@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
 </head>
+
 <body>
-    11111112222222
+    <img src="" alt="">
+    <img src="" alt="">
+    <button>点击</button>
+    <script>
+     
+    let button=   document.getElementsByTagName('img')[0]
+    let button2=   document.getElementsByTagName('img')[1]
+
+
+ 
+  class Aninma {
+     constructor (type,name) {
+        this.type = type
+        this.name = name
+        this. age = name
+     }
+    get   age(){
+         console.log(this.name)
+     }
+    set age (name){
+        this.name = name
+     }
+     static  width = 20
+      static name(params) {
+        
+      }
+  }
+
+   let box = new  Aninma(12121,111);
+  
+
+
+let arr = ['https://img0.baidu.com/it/u=18497219,172601761&fm=253&fmt=auto&app=138&f=PNG?w=519&h=500','https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fup.enterdesk.com%2Fedpic%2Fe3%2Fca%2F35%2Fe3ca35660c3c098e6e3b89b999b9c7af.jpg&refer=http%3A%2F%2Fup.enterdesk.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657626851&t=0077f2d03850b7aac28e5a9b898cf9af']
+
+
+let bok = []
+
+
+let boxs =   arr.forEach((valus,index)=>{
+ let m =   new Promise((resolve,erjent)=>{
+    setTimeout(()=>{
+   resolve(valus)
+    },3000)
+ 
+    })
+    bok.push(m)
+})
+
+
+Promise.all(bok).then(res=>{
+    button.setAttribute('src',res[0])
+    button2.setAttribute('src',res[1])
+})
+
+
+ 
+
+
+
+
+  
+
+  
+
+
+
+  
+
+
+
+
+
+    </script>
 </body>
+
 </html>
